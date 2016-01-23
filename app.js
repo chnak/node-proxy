@@ -27,8 +27,8 @@ simpleselect.func = function (node) {
     stm.on('end', function() {
 
       //Print out the tag you can also parse it or regex if you want
-      process.stdout.write('tag:   ' + tag + '\n');
-      process.stdout.write('end:   ' + node.name + '\n');
+      //process.stdout.write('tag:   ' + tag + '\n');
+      //process.stdout.write('end:   ' + node.name + '\n');
       
       //Now on the write side of the stream write some data using .end()
       //N.B. if end isn't called it will just hang.  
