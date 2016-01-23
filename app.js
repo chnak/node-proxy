@@ -7,13 +7,13 @@ var http = require('http'),
 var selects = [];
 var simpleselect = {};
 
-simpleselect.select = 'head';
+simpleselect.query = 'head';
 simpleselect.func = function (node) {
 	var text='<div class="ujian-hook"></div>';
 		text+='<script type="text/javascript">var ujian_config = {num:12,picSize:84,textHeight:45};<\/script>';
 		text+='<script type="text/javascript" src="http://v1.ujian.cc/code/ujian.js?uid=1581234"><\/script>';
   var text2='<meta name="ujianVerification" content="4756c4b205da2d50f72ba80a149e6229" />';
-	var stm = node.createStream({ "outer" : true });
+	var stm = node.createStream({ "outer" : false });
 	//variable to hold all the info from the data events
     var tag = '';
 
