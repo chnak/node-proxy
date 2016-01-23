@@ -1,0 +1,16 @@
+{
+    "name": "Proxy",
+    "version": "0.0.1",
+    "author": "hejiancheng",
+    "description": "Proxy",
+    "keywords":["node.js","javascript"],
+    "scripts": {
+        "start": "node app.js"
+    },
+    "dependencies": {
+		"http-proxy":"latest",
+		"harmon":"latest",
+        "connect": "latest",
+		"transformer-proxy":"latest"
+    }
+}
